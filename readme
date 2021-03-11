@@ -1,0 +1,11 @@
+just some stuff for linux on veyron_jerry
+
+I got a poin2 and since chrome is eol on it, went down the rabbit hole of linuxing it.
+
+current setup, u-boot in kern-a on sdcard, because i cant seem to make it work from emmc, loading linux off emmc
+
+current u-boot didnt want to boot, using 2018.07 with patches from https://github.com/atopuzov/c201
+
+kernel is mainline plus patches from https://github.com/SolidHal/PrawnOS (mainly the broken gpt workaround)
+
+plan from here is put u-boot on spi, so i dont have to deal with depthcharge at all. 
